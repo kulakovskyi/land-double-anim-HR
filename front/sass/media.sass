@@ -436,3 +436,190 @@
     &__txt
       transform: scale(0.4)
       right: -282px
+
+/*******************************************MOBILE*******************************************/
+
+@media screen and (max-width: 670px) and (orientation: portrait)
+  .bonus
+    &__logo
+      background: url("../img/logo-mob.svg") no-repeat 50% 0/contain
+      width: 205px
+      left: 0
+      right: auto
+      top: 0
+    &__title
+      transform: scale(1)
+      top: auto
+      bottom: 150px
+      z-index: 5
+      &-top,
+      &-bottom
+        font-size: 46px
+        line-height: 49px
+      &-top
+        padding: 5px 11px 3px
+      &-bottom
+        padding: 2px 11px 3px
+        img
+          max-width: 35px
+    &__time
+      transform: scale(1)
+      top: auto
+      bottom: 216px
+      left: 298px
+      &-top,
+      &-bottom
+        font-size: 12px
+        line-height: 16px
+        width: 50px
+        height: 22px
+      &-top
+        border-radius: 4px 4px 0 0
+        border: 1px solid $gray
+      &-bottom
+        border-radius: 0 0 4px 4px
+        border: 1px solid $gray
+
+    &__win
+      transform: scale(1)
+      width: 100%
+      height: 100%
+      .prize1,
+      .prize2
+        transform: scale(1)
+      .prize1
+        background: url("../img/cup-mob.png") no-repeat 50% 0/contain
+        width: 160px
+        height: 170px
+        top: 350px
+        left: auto
+        bottom: auto
+        right: -2px
+      .prize2
+        background: url("../img/ball-r-mob.png") no-repeat 50% 0/contain
+        width: 100px
+        height: 100px
+        top: 100px
+        left: auto
+        bottom: auto
+        right: 40px
+      .circle
+        background: none
+        display: none
+    &__plus2
+      background: none
+      display: none
+    &__plus1
+      left: -13px
+      top: 22%
+      transform: rotate(0deg)
+      animation: 3s plus1 ease
+      background: url("../img/plus-mob.svg") no-repeat 50% 0/contain
+    &__txt
+      padding: 10px 15px
+      font-size: 30px
+      line-height: 38px
+      color: $gray
+      background: #00003D
+      width: 100%
+      z-index: 5
+      transform: scale(1)
+      bottom: -90px
+      top: auto
+      left: 0
+      right: auto
+      &-top,
+      &-bottom
+        padding: 0
+        background: transparent
+        white-space: normal
+        display: none
+      &-wrap
+        display: flex
+        flex-direction: row-reverse
+        align-items: center
+        justify-content: center
+      &-mob
+        display: block
+        white-space: nowrap
+      &-arrow
+        position: static
+        display: block
+        width: 64px
+        height: 64px
+        margin: 0 10px 0 0
+        background: url(../img/arrow.svg) no-repeat 50% 0/contain
+    &__gates
+      transform: scale(0.4)
+      bottom: 207px
+    &__link
+      transform: scale(1) translateX(-50%)
+      padding: 16px 16px 14px
+      width: 95%
+      font-size: 18px
+      line-height: 23px
+      text-align: center
+      left: 50%
+      top: auto
+      bottom: 70px
+      border-radius: 4.7px
+    &__footer
+      padding: 15px 15px
+      height: 200px
+      bottom: -290px
+      border-top: 1px solid $blue
+      &-row
+        flex-direction: column
+        align-items: stretch
+      &-one
+        justify-content: space-between
+        margin: 0 0 25px 0
+        &-plus
+          position: absolute
+          left: 50%
+          transform: translateX(-50%)
+        &-item
+          display: flex
+          flex-direction: column
+          align-items: flex-start
+          &:first-child
+            width: 50%
+            position: relative
+            &:before
+              content: ''
+              position: absolute
+              width: 1px
+              top: -16px
+              height: 190%
+              right: 0
+              background: $blue
+          img
+            max-width: 33px
+          .left
+            font-size: 36px
+            line-height: 30px
+            margin: 0 0 5px 0
+
+            span
+              font-size: 20px
+              line-height: 20px
+              margin-left: -8px
+          .right
+            font-size: 10px
+            line-height: 12px
+            br
+              display: none
+      &-two
+        flex-direction: column-reverse
+        align-items: center
+        background: $blue
+        padding: 28px 15px 26px
+        width: 110%
+        position: relative
+        left: 50%
+        transform: translateX(-50%)
+        &-item
+          &:not(:last-child)
+            margin: 0
+          &:last-child
+            margin: 0 0 12px 0

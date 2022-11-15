@@ -58,7 +58,7 @@ body
     background: #005 url('../img/bg-desc.jpg') no-repeat 50% 0/cover
   @media screen and (min-width: 601px) and (max-width: 1024px) and (orientation: portrait)
     background: #005  url('../img/bg-tab.jpg') no-repeat 50% 0/cover
-  @media screen and (max-width: 600px) and (orientation: portrait)
+  @media screen and (max-width: 670px) and (orientation: portrait)
     background: #005 url("../img/bg-mob.jpg") no-repeat 50% 0/cover
   @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
     background: #005 url("../img/bg-landscape.jpg") no-repeat 50% 0/cover
@@ -66,6 +66,8 @@ body
     position: absolute
     z-index: 3
     width: 400px
+    height: 100%
+    background: url("../img/logo.svg") no-repeat 50% 0/contain
     right: 0
     top: 0
   &__title
@@ -165,6 +167,12 @@ body
     &-bottom
       padding: 3px 17px 1px
       background: $magenta
+      white-space: nowrap
+    &-mob
+      display: none
+    &-top
+      br
+        display: none
     &-bottom
       margin-top: -1px
     &-arrow
