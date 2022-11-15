@@ -623,3 +623,165 @@
             margin: 0
           &:last-child
             margin: 0 0 12px 0
+
+@media screen and (max-width: 420px) and (orientation: portrait) and (max-height: 700px)
+  .bonus
+    &__win
+      transform: scale(0.9)
+      top: -110px
+
+@media screen and (max-width: 420px) and (orientation: portrait) and (max-height: 650px)
+  .bonus
+    &__gates
+      transform: scale(0.35)
+      bottom: 202px
+
+@media screen and (max-width: 420px) and (orientation: portrait) and (max-height: 600px)
+  .bonus
+    &__gates
+      transform: scale(0.35)
+      bottom: 202px
+    &__plus1
+      display: none
+    &__win
+      transform: scale(0.8)
+      top: -167px
+    &__title
+      transform: scale(0.9)
+      bottom: 132px
+    &__time
+      bottom: 200px
+      left: 278px
+
+@media screen and (max-width: 420px) and (orientation: portrait) and (min-height: 900px)
+  .bonus
+    &__win
+      transform: scale(1.2)
+      top: 125px
+    &__gates
+      transform: scale(0.45)
+
+@media screen and (max-width: 358px) and (orientation: portrait)
+  .bonus
+    &__title
+      transform: scale(0.85)
+      bottom: 132px
+    &__time
+      bottom: 198px
+      left: 256px
+    &__gates
+      transform: scale(0.37)
+    &__txt
+      font-size: 20px
+      line-height: 28px
+      bottom: -54px
+    &__footer
+      bottom: -253px
+
+@media screen and (max-width: 340px) and (orientation: portrait) and (max-height: 600px)
+  .bonus
+    &__gates
+      transform: scale(0.32)
+
+/*******************************************LANDSCAPE*******************************************/
+
+@media screen and (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+  .bonus
+    &__footer
+      padding: 15px 15px 13px
+      &-two
+        &-item
+          &:not(:last-child)
+            margin: 0 16px 0 0
+      &-one
+        &-item
+          &:not(:last-child)
+            margin: 0 15px 0 0
+          img
+            max-width: 29px
+          .left
+            font-size: 35px
+            line-height: 20px
+            span
+              font-size: 20px
+              line-height: 0px
+              margin-left: -9px
+          .right
+            font-size: 10px
+            line-height: 15px
+    &__gates
+      transform: scale(0.45)
+    &__link
+      transform: scale(0.65)
+      left: -43px
+      top: 116px
+    &__txt
+      transform: scale(0.4)
+      right: -275px
+      bottom: 76px
+    &__logo
+      width: 186px
+    &__win
+      transform: scale(0.4)
+      bottom: 46px
+      right: 17%
+    &__title
+      transform-origin: top left
+      transform: scale(0.55)
+    &__time
+      transform: scale(0.6)
+      left: 239px
+      top: -6px
+
+@media screen and (max-width: 920px) and (orientation: landscape) and (max-height: 420px)
+  .bonus
+    &__gates
+      transform: scale(0.4)
+
+@media screen and (max-width: 920px) and (orientation: landscape) and (max-height: 395px)
+  .bonus
+    &__title
+      transform: scale(0.45)
+    &__time
+      left: 196px
+    &__link
+      transform: scale(0.5)
+      left: -74px
+      top: 84px
+    &__win
+      transform: scale(0.35)
+
+@media screen and (max-width: 920px) and (orientation: landscape) and (max-height: 355px)
+  .bonus
+    &__gates
+      transform: scale(0.3)
+      bottom: -1px
+      left: -1px
+    &__txt
+      transform: scale(0.3)
+    &__win
+      bottom: 5px
+
+@media screen and (max-width: 920px) and (orientation: landscape) and (max-height: 315px)
+  .bonus
+    &__plus1
+      display: none
+    &__gates
+      transform: scale(0.25)
+
+@media screen and (max-width: 670px) and (orientation: landscape)
+  .bonus
+    &__txt
+      transform: scale(0.3)
+      right: -330px
+
+@media screen and (max-width: 600px) and (orientation: landscape)
+  .bonus
+    &__txt
+      transform: scale(0.25)
+      right: -351px
+    &__win
+      transform: scale(0.3)
+      right: 10%
+    &__plus1
+      display: none
