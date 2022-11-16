@@ -250,7 +250,7 @@ body
     top: -8px
     transform: translateY(-50px)
     background: url("../img/plus-all.svg") no-repeat 50% 0/contain
-    animation: 3s plus1 ease
+    animation: 6s plus1 ease infinite
     animation-delay: 1.4s
     animation-fill-mode: forwards
   &__plus2
@@ -261,9 +261,9 @@ body
     bottom: 50px
     transform: translateY(50px)
     background: url("../img/plus-all.svg") no-repeat 50% 0/contain
-    animation: 3s plus2 ease
+    animation: 6s plus2 ease infinite
     animation-delay: 1s
-    animation-fill-mode: forwards
+
   &__footer
     position: absolute
     bottom: -1px
@@ -339,7 +339,7 @@ body
   0%
     transform: translate(0, 0)
   50%
-    transform: translate(0px, 0px)
+    transform: translate(15px, -15px)
   100%
     transform: translate(0, 0)
 
@@ -370,18 +370,25 @@ body
 @keyframes plus1
   0%
     transform: translateY(-50px)
-  100%
+  50%
     transform: translateY(0)
+  100%
+    transform: translateY(-50px)
+
 
 @keyframes plus2
   0%
     transform: translateY(50px)
-  100%
+  50%
     transform: translateY(0)
+  100%
+    transform: translateY(50px)
 
 
 @keyframes plus1-tab
   0%
     transform: rotate(90deg) translateX(-50px)
-  100%
+  50%
     transform: rotate(90deg) translateX(0)
+  100%
+    transform: rotate(90deg) translateX(-50px)
